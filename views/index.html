@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BorderRPreview</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <a href="https://github.com/EricklLuan" target="_blank"><img src="../img/github.png" alt=""></a>
+        <a href="https://twitter.com/EricklLuan" target="_blank"><img src="../img/twitter.png" alt=""></a>
+    </header>
+
+    <main class="container">
         <input type="range" name="0" class="square" oninput="rangeChange(event)" value="0">
         <input type="range" name="1" class="square" oninput="rangeChange(event)" value="0">
         <input type="range" name="2" class="square" oninput="rangeChange(event)" value="0">
         <input type="range" name="3" class="square" oninput="rangeChange(event)" value="0">
         <div class="result"></div>
-    </div>
+    </main>
+
+    <footer>
+        <p>Feito com 💜 por <strong>Erick Luan</strong></p>
+    </footer>
 
     <script src="../src/main.js"></script>
 </body>
