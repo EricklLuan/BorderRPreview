@@ -7,3 +7,15 @@ function rangeChange(event) {
     else if (event.target.name === "2") square.style.cssText += `border-bottom-right-radius: ${event.target.value}px;`
     else if (event.target.name === "3") square.style.cssText += `border-bottom-left-radius: ${event.target.value}px;`
 }
+
+function copyCSS() {
+    navigator.clipboard.writeText(square.style.cssText)
+}
+
+square.addEventListener('mouseover', () => {
+    square.innerHTML = 'Copy CSS'
+})
+
+square.addEventListener('mouseleave', () => {
+    square.innerHTML = ''
+})

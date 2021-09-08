@@ -33,8 +33,8 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: 67px 70px 67px;
-        grid-template-rows: 67px 70px 67px;
+        grid-template-columns: 67px 76px 67px;
+        grid-template-rows: 67px 76px 67px;
         gap: 40px 40px;
 
         .square {
@@ -73,11 +73,18 @@ body {
             transform: rotate(-45deg);
         }
 
-        div {
+        .result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             grid-column: 2/2;
             grid-row: 2/2;
+            
+            font-size: 12px;
 
-
+            cursor: pointer;
+            color: white;
             background: linear-gradient(to bottom right, #FF698C, #FF876A);
         }
     }
